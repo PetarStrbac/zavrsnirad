@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stilovi.css">
+<title>Forma za registraciju</title>
+<style>
+        p {
+            font: size 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        .meni {
+            list-style-type: none;
+            text-align: center;
+            text-transform: none;
+        }
+
+        .meni li {
+            height: 45px;
+            display: flex;
+            float: left;
+        }
+
+        .meni li a {
+            text-decoration: none;
+            background-color: #bfbfbf;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 12px 20px;
+        }
+
+        a:hover{
+            background-color: white;
+        }
+</style>
+</head>
+<body>
+<ul class="meni">
+    <li><a href="../index.html">Илон Маск</a></li>
+    <li><a href="../kompanije/tesla.html">Тесла Моторс</a></li>
+    <li><a href="../kompanije/spejseks.html">Спејс Екс</a></li>
+    <li><a href='forma.html'>Подаци</a></li>
+</ul>
+<br>
+<br>
+<br>
+<form method="GET">
+Ime: <input type="text" name="ime"><br>
+Prezme: <input type="text" name="prezime"><br>
+E-mail: <input type="email" name="mejl" required><br>
+Lozinka: <input type="password" name="pass" minlength="5"><br>
+Dan rodjenja: <input type="date" name="datum"><br>
+Pol: <br>
+<input type="radio" name="pol" value="muski">Muski<br>
+<input type="radio" name="pol" value="zenski">Zenski<br>
+Hobi: <br>
+<input type="checkbox" name="film">Film<br>
+<input type="checkbox" name="muzika">Muzika<br>
+<input type="checkbox" name="rekreacija">Rekreacija<br>
+Strucna sprema:<br>
+<select name="sprema">
+<option value="srednja">Srednja<br>
+<option value="visa">Visa<br>
+<option value="visoka">Visoka<br>
+</select><br>
+<input type="submit" value="Registruj se!"><input type="reset"><br>
+</form>
+</body>
+</html>
